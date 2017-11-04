@@ -16,7 +16,7 @@ class Threads {
         inputJob = launch{
             while(!inn.hasNextLine()){}
             var msg = inn.nextLine()
-            //send
+            WebSocket.instance().send(msg)
         }
     }
 }
